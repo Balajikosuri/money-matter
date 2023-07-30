@@ -1,0 +1,37 @@
+.accounts {
+  font-weight: 600;
+}
+
+.add-transaction {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+
+.plus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  border: 0;
+  padding: 8px 12px;
+  background-color: #2d60ff;
+  border-radius: 12px;
+  justify-content: center;
+  gap: 4px;
+}
+.account-section {
+  display: flex;
+  background-color: #fff;
+  width: 100%;
+  padding: 24px 40px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  font-size: 28px;
+  color: #343c6a;
+}
+.plus-char {
+  font-weight: bold;
+  font-size: 17px;
+}
