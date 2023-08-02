@@ -1,172 +1,89 @@
-In this project, let's build a **Hamburger Menu** app by applying the concepts we have learned till now.
+# React Assignment
 
-### Refer to the image below:
+### **Prerequisites**
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/hamburger-menu-output-v0.gif" alt="hamburger menu output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+- Knowledge of **ReactJS, HTML, and CSS**.
+- Knowledge of installing npm packages (both local & global)
+- Knowledge of creating React applications using [**Create React App**](https://facebook.github.io/create-react-app/)
+- Knowledge of fetching JSON data from a REST API endpoint
+- A GitHub account in order to share your code with us
+- Using **Redux or Mobx** or any other state management library is an added advantage.
 
-### Design Files
+## **Submission guidelines**
 
-<details>
-<summary>Click to view</summary>
+1. **Before Starting the Assignment:**
+    
+    Create a public GitHub repository to work on this assignment
+    
+2. **After completing the Assignment**
+    
+    You need to submit your public GitHub repository Link and a Loom video recording explaining your code and how it works by showing your output
+    
+    **Note:** The Loom recording should not exceed 5 minutes
+    
+    *Submission Form: Update Form Link Here:* https://forms.gle/hRUsxLrNRy4u5pf68
+    
+    *How to record your screen using Loom video:* https://youtu.be/WSBDNlJCwtg 
+    
 
-- [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js/hamburger-menu-about-sm-outputs.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Home](https://assets.ccbp.in/frontend/content/react-js/hamburger-menu-home-lg-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - About](https://assets.ccbp.in/frontend/content/react-js/hamburger-menu-about-lg-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Menu](https://assets.ccbp.in/frontend/content/react-js/hamburger-menu-popup-lg-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px) - Not Found](https://assets.ccbp.in/frontend/content/react-js/hamburger-menu-not-found-lg-output.png)
+### Queries/Issues
 
-</details>
+Feel free to fill out this form in case of any queries/issues
 
-### Set Up Instructions
+[](https://forms.gle/A3S7Gd4CJVYbEiaP8)
 
-<details>
-<summary>Click to view</summary>
+### Assignment Screens :
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
+https://www.figma.com/file/U75zTaCvoQJUPT9FOaA3Dj/Money-Matters?node-id=1%3A1492&mode=dev
 
-### Completion Instructions
+[Figma Reference Video](https://www.youtube.com/watch?v=hbN9RGcQFNU)
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
+## Assignment Description:
 
-The app must have the following functionalities
+<aside>
+👇 Click on the below link to view the Assignment description
 
-- Initially, the Home Route should be displayed
-- When hamburger icon button in the header is clicked, then the popup should be opened
-  <div style="text-align: center;">
-      <img src="https://assets.ccbp.in/frontend/content/react-js/hamburger-menu-popup-img.png" alt="popup" style="max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-  </div>
-  <br/>
-- When the **Home** is clicked, then the page should be navigated to the Home Route
-- When the **About** is clicked, then the page should be navigated to the About Route
-- When the close button is clicked, then the popup should be closed
-- When the website logo in the Header is clicked, then the page should be navigated to the Home Route
+[Assignment](https://www.notion.so/Assignment-90c57a6d110f47cc8b727af3e8017432?pvs=21)
 
-</details>
+</aside>
 
-<details>
-<summary>Components Structure</summary>
+### APIs:
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/hamburger-menu-component-structure-breakdown-home.png" alt="component structure breakdown home" style="max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/hamburger-menu-component-structure-breakdown-about.png" alt="component structure breakdown about" style="max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+You can check all the APIs here - https://www.postman.com/interstellar-firefly-777826/workspace/money-matters/collection/28254623-dcd2cdfa-4af1-49f5-bd68-a7218aedc5e7?action=share&creator=28256022
 
-</details>
+### References:
 
-<details>
-<summary>Implementation Files</summary>
-<br/>
+These are the references for the best practices that you can follow while developing this assignment
 
-Use these files to complete the implementation:
+- CSS Position: https://css-tricks.com/almanac/properties/p/position/
+- https://react.dev/learn
+- https://dmitripavlutin.com/7-architectural-attributes-of-a-reliable-react-component/
 
-- `src/App.js`
-- `src/components/Header/index.js`
-- `src/components/Header/index.css`
-- `src/components/Home/index.js`
-- `src/components/Home/index.css`
-- `src/components/About/index.js`
-- `src/components/About/index.css`
-- `src/components/NotFound/index.js`
-- `src/components/NotFound/index.css`
-</details>
+### **Code Guidelines**
 
-### Quick Tips
+- Write self-explanatory code: Give meaningful names to components, methods, and variables to increase the readability of the code.
+- Don't use flag arguments (Ex: booleans), instead split components/ functions that can be used without the flag.
+    - Read more: https://understandlegacycode.com/blog/what-is-wrong-with-boolean-parameters/#4-otherwise-split-the-function
+- Extract magic numbers & strings into constants :
+    - Read more here: https://www.codingzeal.com/post/developer-dark-arts-magic-strings
+- Always use destructuring.
 
-<details close>
-<summary>Click to view</summary>
-<br>
+### React Specific Guidelines
 
-To build this project, take a look at the <a href='https://learning.ccbp.in/frontend-development/course?c_id=2f4192f7-7495-49ca-a6ce-6b74005e25f1&s_id=b01fca1c-aa5c-4d79-b81e-0220e7649bd0&t_id=416f0cab-8425-413b-9157-c7b4d4ae4467' target="_blank">React Popup</a> reading material
+- A component has a **single responsibility,** which means it has one reason to change.
+- Writing reusable components:
+    - Able to customize the UI
+    - Expose necessary props
+- Create separate files for each component.
+- Handle all the API statuses like Loading, Success and Failure, etc.,
 
-- To style popup content use `.popup-content` class
+### Development Process
 
-```jsx
-<Popup
-  modal
-  trigger={
-    //write code here
-  }
-  className="popup-content"
->
-  //write code here
-</Popup>
-```
-
-</details>
-
-### Important Note
-
-<details>
-<summary>Click to view</summary>
-
-<br/>
-
-**The following instructions are required for the tests to pass**
-
-- `Home` Route should consist of `/` in the URL path
-- `About` Route should consist of `/about` in the URL path
-- No need to use the `BrowserRouter` in `App.js` as we have already included in `index.js`
-- The hamburger icon button should have the `data-testid` as **hamburgerIconButton**
-- The close button in the popup should have the `data-testid` as **closeButton**
-- `GiHamburgerMenu` from react-icons should be used for **Hamburger Icon** in the Header
-- `IoMdClose` from react-icons should be used for **Close Icon** in the Popup
-- `AiFillHome` from react-icons should be used for **Home Icon** in the Popup
-- `BsInfoCircleFill` from react-icons should be used for **About Icon** in the Popup
-
-</details>
-
-### Resources
-
-<details>
-<summary>Image URLs</summary>
-
-- [https://assets.ccbp.in/frontend/react-js/hamburger-menu-website-logo.png](https://assets.ccbp.in/frontend/react-js/hamburger-menu-website-logo.png) alt should be **website logo**
-- [https://assets.ccbp.in/frontend/react-js/home-sm-img.png](https://assets.ccbp.in/frontend/react-js/home-sm-img.png) alt should be **home**
-- [https://assets.ccbp.in/frontend/react-js/home-lg-img.png](https://assets.ccbp.in/frontend/react-js/home-lg-img.png) alt should be **home**
-- [https://assets.ccbp.in/frontend/react-js/about-sm-img.png](https://assets.ccbp.in/frontend/react-js/about-sm-img.png) alt should be **about**
-- [https://assets.ccbp.in/frontend/react-js/about-lg-img.png](https://assets.ccbp.in/frontend/react-js/about-lg-img.png) alt should be **about**
-- [https://assets.ccbp.in/frontend/react-js/not-found-img.png](https://assets.ccbp.in/frontend/react-js/not-found-img.png) alt should be **not found**
-
-</details>
-
-<details>
-<summary>Colors</summary>
-
-<br/>
-<div style="background-color: #dcdcdc; width: 150px; padding: 10px; color: black">Hex: #dcdcdc</div>
-<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-<div style="background-color: #616e7c; width: 150px; padding: 10px; color: black">Hex: #616e7c</div>
-
-</details>
-
-<details>
-<summary>Font-families</summary>
-
-- Roboto
-
-</details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
-# money-matter
-# money-matter
-# money-matter
-# money-matter
-# money-matter
+- Go through the given screens
+- Prepare **ELP**(Execution Level Plan) i.e
+    - Break the UI into Component Hierarchy
+    - Identify the minimal state & where to maintain it
+    - List down different **cases** for the components
+- Start building with common components and gradually compose them to get the given UI.
+- Maintain proper Git History with appropriate commit messages
+- **Self-review** your code against the guidelines before you submit it.
