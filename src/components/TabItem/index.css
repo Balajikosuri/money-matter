@@ -1,0 +1,44 @@
+.tab-item {
+  list-style: none;
+  margin-bottom: 8px;
+  padding: 8px 0px 8px 30px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+
+.option-item-icon {
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+}
+
+.option-item-name {
+  /* margin-top: 5px; */
+  font-size: 18px;
+  font-weight: 600;
+  color: #505887;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 6px;
+}
+
+.option-item {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.active-tab {
+  font-weight: bold;
+  border-left: 6px solid #2d60ff;
+  background-color: transparent;
+  padding-left: 22px;
+}
+.active-text-color {
+  color: #2d60ff;
+  font-weight: bold;
+}

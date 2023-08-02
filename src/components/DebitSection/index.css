@@ -5,7 +5,7 @@
 .debit-amount {
   color: rgb(290, 0, 0);
 }
-.credit1 {
+.debit1 {
   font-size: 16px;
   color: #718ebf;
 }
@@ -16,12 +16,12 @@
   justify-content: flex-start;
   gap: 7px;
 }
-.credit-icon {
+.debit-icon {
   width: 50%;
   padding: 2%;
   flex-shrink: 8;
 }
-.credit-section {
+.debit-section {
   border-radius: 25px;
   background-color: #fff;
   width: 50%;
@@ -36,4 +36,10 @@
   font-size: 32px;
   color: #16dbaa;
   margin: 14px;
+}
+
+@media screen and (min-width: 576px) {
+  .debit-section {
+    width: 100%;
+  }
 }

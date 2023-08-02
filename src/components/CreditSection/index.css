@@ -1,3 +1,25 @@
+.credit-section {
+  border-radius: 25px;
+  background-color: #fff;
+  width: 50%;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  padding: 25px 36px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  text-align: left;
+  font-size: 32px;
+  color: #16dbaa;
+  margin: 14px;
+}
+@media screen and (min-width: 576px) {
+  .credit-section {
+    width: 100%;
+  }
+}
+
 .content-container {
   font-weight: 600;
   font-size: 25px;
@@ -17,20 +39,4 @@
   width: 50%;
   padding: 2%;
   flex-shrink: 8;
-}
-.credit-section {
-  border-radius: 25px;
-  background-color: #fff;
-  width: 50%;
-  height: 120px;
-  display: flex;
-  flex-direction: row;
-  padding: 25px 36px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  text-align: left;
-  font-size: 32px;
-  color: #16dbaa;
-  margin: 14px;
 }

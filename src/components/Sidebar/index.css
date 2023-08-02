@@ -1,18 +1,19 @@
-.left-sidebar {
+.sidebar {
   width: 30%;
-  border: 2px solid green;
+
   min-height: 100vh;
   padding: 20px 0px 32px 20px;
 }
 
 @media screen and (max-width: 576px) {
-  .left-sidebar {
+  .sidebar {
     width: 100%;
     min-height: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-bottom: 2px solid orange;
+    padding: 20px 0px 32px 20px;
   }
 }
 
@@ -37,33 +38,33 @@
     font-size: 25px;
   }
 }
-.tabs-container {
-  padding: 0;
-  width: 100%;
-}
-.tab-item {
-  list-style: none;
-  margin-bottom: 8px;
-}
+
 .tab-btn {
   cursor: pointer;
   background-color: transparent;
   border: none;
   display: flex;
   align-items: center;
+  height: 60px;
+  color: #505887;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  color: #505887;
+  text-align: left;
 }
-.active-tab {
-  color: blue;
-  font-weight: bold;
-  border-left: 3px solid blue;
-  background-color: transparent;
-  padding: 5px 8px;
-}
+
 .icon {
   margin-right: 10px;
 }
+.LoggedUser-container-large-devices {
+  width: 100%;
+  flex-shrink: 1;
+  margin-right: 5%;
+}
 @media screen and (max-width: 576px) {
-  .tabs-container {
-    width: 100%;
+  .LoggedUser-container-large-devices {
+    display: none;
   }
 }

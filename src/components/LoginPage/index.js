@@ -13,6 +13,8 @@ class LoginForm extends Component {
     showSubmitError: false,
     errorMsg: '',
     isPasswordType: true,
+    userRole: {adminRole: '', normalUserRole: ''},
+    loginUserId: 0,
   }
 
   onTogglePassword = () =>
@@ -43,25 +45,35 @@ class LoginForm extends Component {
 
   submitForm = async event => {
     event.preventDefault()
+
+    const jwtToken =
+      'g08A3qQy00y8yFDq3y6N1ZQnhOPOa4msdie5EtKS1hFStar01JzPKrtKEzYY2BtF'
+
     const {Email, password} = this.state
     const userDetails = {email: Email, password}
-    const url = 'https://bursting-gelding-24.hasura.app/api/rest/login'
+    const url = 'https://bursting-gelding-24.hasura.app/api/rest/get-user-id'
     const options = {
       method: 'POST',
       headers: {
-        'x-hasura-admin-secret':
-          'g08A3qQy00y8yFDq3y6N1ZQnhOPOa4msdie5EtKS1hFStar01JzPKrtKEzYY2BtF',
-        'x-hasura-role': 'admin',
+        'x-hasura-admin-secret': jwtToken,
       },
       body: JSON.stringify(userDetails),
     }
     const response = await fetch(url, options)
     const data = await response.json()
 
-    console.log(data)
+    // console.log(data)
 
+    //     {
+    //     "get_user_id": [
+    //         {
+    //             "id": 1
+    //         }
+    //     ]
+    // }
     if (response.ok === true) {
-      this.onSubmitSuccess(data.jwt_token)
+      this.onSubmitSuccess(jwtToken)
+      //   console.log(data.get_user_id[0])
     } else {
       this.onSubmitFailure(data.code)
     }

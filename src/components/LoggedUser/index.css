@@ -1,0 +1,245 @@
+.footer {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  max-width: 80%;
+  padding: 3px 3px;
+}
+/*  */
+
+.avatar-icon {
+  border-radius: 200px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.username {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  color: black;
+}
+.emailid {
+  margin: 0;
+
+  line-height: 20px;
+  color: #718ebf;
+  flex-shrink: 2;
+}
+.name-email-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 2;
+}
+.avatar-label-group {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.icon {
+  width: 100%;
+}
+.log-out-01 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  margin: 0 !important;
+  flex-shrink: 0;
+  width: 10px;
+}
+.account {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 14px 14px;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  font-size: 14px;
+  color: #505887;
+  flex-shrink: 2;
+}
+/*  */
+.modal {
+  font-size: 12px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+.pop-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(52, 64, 84, 0.7);
+  backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*  */
+/* Logout pop-up container */
+.logout-pop-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+  color: #333b69;
+  font-size: 20px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+/* Colorful logout icon */
+.colorful-logout-icon {
+  top: 32px;
+  left: 24px;
+  margin-right: 8%;
+  margin-top: 4%;
+
+  width: 68px;
+  height: 68px;
+  border-radius: 20px;
+  /* margin-right: 10%; */
+}
+
+/* Icon image */
+.logout-icon {
+  top: 20.83%;
+  right: 20.83%;
+  bottom: 20.83%;
+  left: 20.83%;
+  /* max-width: 100%; */
+  max-height: 100%;
+  width: 20px;
+}
+
+/* Close icon */
+.pop-close-icon {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  top: 24px;
+  left: 543px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+
+/* "Yes, Logout" button */
+.yes-logout-btn {
+  cursor: pointer;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cancel-btn {
+  cursor: pointer;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yes-logout-btn {
+  background-color: #dc2626;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* "Cancel" button */
+.cancel-btn {
+  background-color: #fff;
+  border: 1px solid #cbd5e1;
+  color: #333b69;
+  font-weight: 500;
+}
+
+/* Buttons container */
+.logout-buttons-container {
+  top: 120px;
+  left: 112px;
+  display: flex;
+  gap: 16px;
+  margin-top: 10%;
+}
+
+/* Logout message heading */
+.logout-msg-heading {
+  color: #333b69;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 140% */
+}
+
+/* Logout message description */
+.logout-msg-description {
+  top: 68px;
+  left: 112px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #505887;
+  margin: 0;
+  width: 468px;
+}
+.cross-button {
+  align-self: flex-end;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 8px;
+}
+.logout-pop-container1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.logout-pop-container-child {
+  display: flex;
+  width: 100%;
+  padding: 5px 5px;
+}
